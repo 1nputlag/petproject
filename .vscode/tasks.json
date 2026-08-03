@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build SDL2 Project",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I/opt/homebrew/include",
+                "-I/opt/homebrew/include/SDL2",
+                "-L/opt/homebrew/lib",
+                "-lSDL2",
+                "-lSDL2_ttf"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Компiляцiя рушiя для Aim-тренера"
+        }
+    ]
+}
