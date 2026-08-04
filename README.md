@@ -19,8 +19,11 @@ An interactive aim training game built in C++ using the SDL2 library, designed t
 - **Text Rendering:** SDL2_ttf
 
 ## 📦 How to Build & Run (macOS)
-1. Make sure you have the required SDL2 libraries installed (via Homebrew):
+1. Make sure you have the required SDL2 libraries and CMake installed (via Homebrew):
    ```bash
-   brew install sdl2 sdl2_ttf
-Compile project using your compiler: g++ main.cpp -o AimTrainer -lSDL2 -lSDL2_ttf
-Run the executable: ./AimTrainer
+   brew install sdl2 sdl2_ttf cmake
+   mkdir build
+   cd build
+   cmake ..
+   make
+   ./AimTrainer

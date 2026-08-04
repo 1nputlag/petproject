@@ -194,7 +194,7 @@ private:
     }
 
     void renderMenu() {
-        std::string titleText = "AIM TRAINER PRO";
+        std::string titleText = "AIM TRAINER";
         std::string startText = "Press ENTER to Start";
         
         SDL_Color titleColor = {0, 255, 255, 255};
